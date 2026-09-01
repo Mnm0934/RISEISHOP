@@ -59,8 +59,9 @@ header{
     background:var(--main);
     color:#fff;
     text-decoration:none;
-    padding:10px 20px;
-    border-radius:30px;
+    padding:12px 20px;
+    border-radius:12px;
+    font-weight:bold;
 }
 
 .page-title{
@@ -185,8 +186,8 @@ footer{
 <div class="container header-inner">
 
 <div class="logo">
-履正社高校硬式野球部OB会
-<span>RISEI SHOP 特設サイト</span>
+RISEI SHOP
+<span>履正社高校硬式野球部OB会</span>
 </div>
 
 <a href="products.html" class="back-btn">
@@ -233,7 +234,7 @@ margin-bottom:15px;
 
 履正社高等学校硬式野球部OB会<br>
 
-甲子園出場記念Tシャツ販売特設サイト
+オフィシャルグッズショップ
 
 </p>
 
@@ -271,11 +272,15 @@ Keep The Faith<br>
 <footer>
 
 <p>
-© 2026 RISEI SHOP
+© RISEI SHOP
 <br>
 履正社高等学校硬式野球部OB会
 <br>
-甲子園出場記念Tシャツ販売特設サイト
+<strong>RISEI SHOP</strong><br>
+
+履正社高等学校硬式野球部OB会<br>
+
+オフィシャルグッズショップ
 </p>
 
 <br>
@@ -351,10 +356,6 @@ ${item.product}
 </h2>
 
 <div class="row">
-カラー：${item.color || "不明"}
-</div>
-
-<div class="row">
 サイズ：${item.size}
 </div>
 
@@ -391,6 +392,7 @@ border:none;
 padding:8px 15px;
 border-radius:6px;
 cursor:pointer;
+font-weight:bold;
 ">
 
 削除
@@ -512,7 +514,7 @@ function changeQty(id, amount){
 document
 .getElementById("cart-count")
 .innerHTML =
-`🛒 ${cartCount}点`;
+`🛒 カート ${cartCount}点`;
 
 </script>
 

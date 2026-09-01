@@ -154,8 +154,8 @@ footer{
 <div class="container header-inner">
 
 <div class="logo">
-履正社高校硬式野球部OB会
-<span>RISEI SHOP 特設サイト</span>
+RISEI SHOP
+<span>履正社高校硬式野球部OB会</span>
 </div>
 
 <a href="cart.html" class="back-btn">
@@ -343,6 +343,20 @@ name="entry.171466214"
 </div>
 
 <div style="
+background:#e8f7fa;
+border:1px solid #00b7c7;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+">
+
+<strong>発送について</strong><br>
+
+ご注文確認後、7～14営業日程度で発送いたします。
+
+</div>
+
+<div style="
 background:#fff8e1;
 border:1px solid #ffd54f;
 padding:15px;
@@ -408,8 +422,7 @@ margin-bottom:15px;
 
 履正社高等学校硬式野球部OB会<br>
 
-甲子園出場記念Tシャツ販売特設サイト
-
+オフィシャルグッズショップ
 </p>
 
 <br>
@@ -446,11 +459,11 @@ Keep The Faith<br>
 <footer>
 
 <p>
-© 2026 RISEI SHOP
+© RISEI SHOP
 <br>
 履正社高等学校硬式野球部OB会
 <br>
-甲子園出場記念Tシャツ販売特設サイト
+オフィシャルグッズショップ
 </p>
 
 <br>
@@ -519,8 +532,6 @@ mergedCart.forEach(item => {
 
 ${item.product}<br>
 
-カラー：${item.color}<br>
-
 サイズ：${item.size}<br>
 
 数量：${item.quantity}<br>
@@ -534,12 +545,12 @@ ${item.product}<br>
 
     orderText +=
 `${item.product}
-カラー:${item.color}
 サイズ:${item.size}
 数量:${item.quantity}
 小計:${subtotal.toLocaleString()}円
 
 `;
+
 
 });
 
@@ -596,11 +607,17 @@ updateOrderData();
 document.getElementById("orderForm")
 .addEventListener("submit", function(){
 
-    console.log("送信成功");
+    document.querySelector(".submit-btn")
+    .disabled = true;
+
+    document.querySelector(".submit-btn")
+    .innerText = "送信中...";
+
+    alert("ご注文を受け付けました。ありがとうございます。");
 
     setTimeout(function(){
         window.location.href = "thanks.html";
-    }, 3000);
+    }, 1500);
 
 });
 

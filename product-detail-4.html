@@ -232,27 +232,61 @@ RISEI SHOP
 <div class="detail-grid">
 
 <div class="detail-image">
-<img src="RISEI-uniform-towel.jpg" alt="RISEIユニフォーム フェイスタオル">
+
+<img
+id="productImage"
+src="RISEI-dry-pants.jpg"
+alt="RISEIドライハーフパンツ"
+>
+
+<div style="
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:15px;
+">
+
+<button
+type="button"
+onclick="prevImage()"
+style="
+padding:10px 20px;
+border:none;
+background:#003a63;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+">
+◀
+</button>
+
+<button
+type="button"
+onclick="nextImage()"
+style="
+padding:10px 20px;
+border:none;
+background:#003a63;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+">
+▶
+</button>
+
+</div>
+
 </div>
 
 <div class="detail-info">
 
 <h1>
-RISEIユニフォーム フェイスタオル
-</h1>
+RISEIドライハーフパンツ</h1>
 
 <div class="price">
-¥2,200（税込）
+¥5,500（税込）
 </div>
 <div class="description">
-
-<div style="
-background:#f0f7fa;
-border-left:5px solid #00b7c7;
-padding:20px;
-border-radius:10px;
-line-height:2;
-">
 
 <p style="
 font-weight:bold;
@@ -263,45 +297,67 @@ margin-bottom:15px;
 商品説明
 </p>
 
+<div style="
+background:#f0f7fa;
+border-left:5px solid #00b7c7;
+padding:20px;
+border-radius:10px;
+line-height:2;
+">
+
 <p>
 
 <strong>
-あの伝統のユニフォームをそのままタオルに。
+グラウンドでも、トレーニングでも、普段着でも。
 </strong>
 
 <br><br>
 
-履正社高校硬式野球部のホームユニフォームを
-モチーフにした、存在感抜群のフェイスタオルです。
+吸汗速乾に優れ、
+軽量で快適なドライハーフパンツ。
 
 <br><br>
 
-「RISEI」の力強いロゴと校章を忠実に再現し、
-まるでユニフォームを手にしているかのような仕上がり。
+右裾には
+RISEI BASEBALL ALUMNI ASSOCIATION ロゴ、
 
-応援はもちろん、
-観戦・記念品・コレクションとしてもおすすめです。
-
-<br><br>
-
-卒業生、在校生、保護者、
-野球ファン必見のアイテム。
+左裾には
+KEEP THE FAITH ロゴを配置。
 
 <br><br>
 
-<strong>【商品詳細】</strong><br>
-・フェイスタオル<br>
-・ユニフォームデザイン仕様<br>
-・応援グッズ、記念品として最適<br>
-・普段使いにもおすすめ
+シンプルながら存在感のある
+デザインに仕上げました。
 
 <br><br>
 
-受け継がれる伝統と誇りを、
-いつもそばに。
+野球を通じて培った誇りと
+仲間との絆を、日常のスタイルに。
+
+<br><br>
+
+━━━━━━━━━━━━━━━
+
+<br><br>
+
+<strong>■カラー</strong><br>
+ネイビー
+
+<br><br>
+
+<strong>■素材</strong><br>
+リサイクルポリエステル100％
+
+<br><br>
+
+<strong>■仕様</strong><br>
+・吸汗速乾<br>
+・UVカット<br>
+・サイドポケット付き<br>
+・ウエストゴム＆スピンドル仕様
 
 </p>
-
+</div>
 </div>
 
 </div>
@@ -313,18 +369,53 @@ margin-bottom:15px;
 <h3>サイズ詳細</h3>
 
 <table>
+
 <tr>
-<th>項目</th>
 <th>サイズ</th>
+<th>S</th>
+<th>M</th>
+<th>L</th>
+<th>XL</th>
+<th>XXL</th>
 </tr>
 
 <tr>
-<td>本体</td>
-<td>約34cm × 85cm</td>
+<td>総丈</td>
+<td>44</td>
+<td>47</td>
+<td>50</td>
+<td>53</td>
+<td>56</td>
+</tr>
+
+<tr>
+<td>適応ウエスト</td>
+<td>72-76</td>
+<td>76-81</td>
+<td>81-87</td>
+<td>87-93</td>
+<td>93-99</td>
+</tr>
+
+<tr>
+<td>股下</td>
+<td>20</td>
+<td>22</td>
+<td>24</td>
+<td>26</td>
+<td>28</td>
+</tr>
+
+<tr>
+<td>股ワタリ</td>
+<td>36</td>
+<td>37</td>
+<td>38</td>
+<td>40</td>
+<td>42</td>
 </tr>
 
 </table>
-
 </div>
 
 <div
@@ -357,7 +448,22 @@ line-height:1.8;
 </div>
 
 
+
 <form id="cartForm">
+
+<div class="form-group">
+
+<label>サイズ</label>
+
+<select name="size" required>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+</select>
+
+</div>
 
 <div class="form-group">
 
@@ -426,15 +532,51 @@ placeholder="備考があれば入力"
 
 <script>
 
+const images = [
+    "RISEI-dry-pants.jpg",
+    "RISEI-dry-pants-size.jpg"
+];
+
+let currentImage = 0;
+
+function nextImage(){
+
+    currentImage++;
+
+    if(currentImage >= images.length){
+        currentImage = 0;
+    }
+
+    document.getElementById(
+        "productImage"
+    ).src = images[currentImage];
+}
+
+function prevImage(){
+
+    currentImage--;
+
+    if(currentImage < 0){
+        currentImage = images.length - 1;
+    }
+
+    document.getElementById(
+        "productImage"
+    ).src = images[currentImage];
+}
+
 document
 .getElementById("cartForm")
 .addEventListener("submit", function(e){
 
     e.preventDefault();
 
-    const size = "";
+    const size =
+document.querySelector(
+'select[name="size"]'
+).value;
 
-const image = "RISEI-uniform-towel.jpg";
+const image = "RISEI-dry-pants.jpg";
 
     const quantity =
     document.querySelector(
@@ -449,13 +591,15 @@ const image = "RISEI-uniform-towel.jpg";
     const cartData = {
 
 id:
-"facetowel-" +
+"pants-" +
+size +
+"-" +
 Date.now(),
 
 product:
-"RISEIユニフォーム フェイスタオル",
+"RISEIドライハーフパンツ",
 
-price:2200,
+price:5500,
 
 image:image,
 
@@ -486,7 +630,8 @@ try {
 }
 
 let existingItem = cart.find(item =>
-    item.product === cartData.product
+    item.product === cartData.product &&
+    item.size === cartData.size
 );
 
 if(existingItem){

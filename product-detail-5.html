@@ -203,6 +203,14 @@ footer{
 
 }
 
+.size-chart{
+    overflow-x:auto;
+}
+
+.size-chart table{
+    min-width:900px;
+}
+
 
 </style>
 </head>
@@ -232,27 +240,62 @@ RISEI SHOP
 <div class="detail-grid">
 
 <div class="detail-image">
-<img src="RISEI-uniform-towel.jpg" alt="RISEIユニフォーム フェイスタオル">
+
+<img
+id="productImage"
+src="RISEI-dry-tshirt.jpg"
+alt="RISEIドライTシャツ"
+>
+
+<div style="
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:15px;
+">
+
+<button
+type="button"
+onclick="prevImage()"
+style="
+padding:10px 20px;
+border:none;
+background:#003a63;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+">
+◀
+</button>
+
+<button
+type="button"
+onclick="nextImage()"
+style="
+padding:10px 20px;
+border:none;
+background:#003a63;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+">
+▶
+</button>
+
+</div>
+
 </div>
 
 <div class="detail-info">
 
 <h1>
-RISEIユニフォーム フェイスタオル
+RISEI ドライTシャツ
 </h1>
 
 <div class="price">
-¥2,200（税込）
+¥5,500（税込）
 </div>
 <div class="description">
-
-<div style="
-background:#f0f7fa;
-border-left:5px solid #00b7c7;
-padding:20px;
-border-radius:10px;
-line-height:2;
-">
 
 <p style="
 font-weight:bold;
@@ -263,45 +306,75 @@ margin-bottom:15px;
 商品説明
 </p>
 
+<div style="
+background:#f0f7fa;
+border-left:5px solid #00b7c7;
+padding:20px;
+border-radius:10px;
+line-height:2;
+">
+
 <p>
 
 <strong>
-あの伝統のユニフォームをそのままタオルに。
+野球で繋がった仲間との絆を、いつまでも。
 </strong>
 
 <br><br>
 
-履正社高校硬式野球部のホームユニフォームを
-モチーフにした、存在感抜群のフェイスタオルです。
+フロントはワンポイントのカレッジロゴ、
+
+<br>
+
+バックには存在感のあるアーチロゴを配置した
+シンプルかつ王道のデザイン。
 
 <br><br>
 
-「RISEI」の力強いロゴと校章を忠実に再現し、
-まるでユニフォームを手にしているかのような仕上がり。
+吸汗速乾性に優れたドライ素材を採用し、
 
-応援はもちろん、
-観戦・記念品・コレクションとしてもおすすめです。
+<br>
 
-<br><br>
-
-卒業生、在校生、保護者、
-野球ファン必見のアイテム。
+スポーツシーンはもちろん、
+普段着としても快適に着用いただけます。
 
 <br><br>
 
-<strong>【商品詳細】</strong><br>
-・フェイスタオル<br>
-・ユニフォームデザイン仕様<br>
-・応援グッズ、記念品として最適<br>
-・普段使いにもおすすめ
+胸に誇りを。
+
+<br>
+
+背中に歴史を。
 
 <br><br>
 
-受け継がれる伝統と誇りを、
-いつもそばに。
+<strong>
+RISEI BASEBALL ALUMNI ASSOCIATION
+</strong>
+
+<br><br>
+
+━━━━━━━━━━━━━━━
+
+<br><br>
+
+<strong>■カラー</strong><br>
+ネイビー
+
+<br><br>
+
+<strong>■素材</strong><br>
+リサイクルポリエステル100％
+
+<br><br>
+
+<strong>■仕様</strong><br>
+・吸汗速乾<br>
+・UVカット<br>
+・軽量ドライ素材
 
 </p>
-
+</div>
 </div>
 
 </div>
@@ -313,18 +386,73 @@ margin-bottom:15px;
 <h3>サイズ詳細</h3>
 
 <table>
+
 <tr>
-<th>項目</th>
 <th>サイズ</th>
+<th>S</th>
+<th>M</th>
+<th>L</th>
+<th>XL</th>
+<th>XXL</th>
+<th>XXXL</th>
+<th>XXXXL</th>
+<th>5XL</th>
+<th>6XL</th>
 </tr>
 
 <tr>
-<td>本体</td>
-<td>約34cm × 85cm</td>
+<td>身丈</td>
+<td>65</td>
+<td>68</td>
+<td>71</td>
+<td>74</td>
+<td>77</td>
+<td>80</td>
+<td>83</td>
+<td>85</td>
+<td>87</td>
+</tr>
+
+<tr>
+<td>身幅</td>
+<td>48</td>
+<td>51</td>
+<td>54</td>
+<td>57</td>
+<td>60</td>
+<td>64</td>
+<td>68</td>
+<td>73</td>
+<td>77</td>
+</tr>
+
+<tr>
+<td>肩幅</td>
+<td>45</td>
+<td>47</td>
+<td>49</td>
+<td>51</td>
+<td>54</td>
+<td>57</td>
+<td>60</td>
+<td>63</td>
+<td>67</td>
+</tr>
+
+<tr>
+<td>袖丈</td>
+<td>20</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+<td>29</td>
 </tr>
 
 </table>
-
 </div>
 
 <div
@@ -357,7 +485,26 @@ line-height:1.8;
 </div>
 
 
+
 <form id="cartForm">
+
+<div class="form-group">
+
+<label>サイズ</label>
+
+<select name="size" required>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+<option>XXXL</option>
+<option>XXXXL</option>
+<option>5XL</option>
+<option>6XL</option>
+</select>
+
+</div>
 
 <div class="form-group">
 
@@ -426,15 +573,52 @@ placeholder="備考があれば入力"
 
 <script>
 
+const images = [
+    "RISEI-dry-tshirt.jpg",
+    "RISEI-dry-tshirt-size.jpg"
+];
+
+
+let currentImage = 0;
+
+function nextImage(){
+
+    currentImage++;
+
+    if(currentImage >= images.length){
+        currentImage = 0;
+    }
+
+    document.getElementById(
+        "productImage"
+    ).src = images[currentImage];
+}
+
+function prevImage(){
+
+    currentImage--;
+
+    if(currentImage < 0){
+        currentImage = images.length - 1;
+    }
+
+    document.getElementById(
+        "productImage"
+    ).src = images[currentImage];
+}
+
 document
 .getElementById("cartForm")
 .addEventListener("submit", function(e){
 
     e.preventDefault();
 
-    const size = "";
+    const size =
+document.querySelector(
+'select[name="size"]'
+).value;
 
-const image = "RISEI-uniform-towel.jpg";
+const image = "RISEI-dry-tshirt.jpg";
 
     const quantity =
     document.querySelector(
@@ -449,13 +633,15 @@ const image = "RISEI-uniform-towel.jpg";
     const cartData = {
 
 id:
-"facetowel-" +
+"drytshirt-" +
+size +
+"-" +
 Date.now(),
 
 product:
-"RISEIユニフォーム フェイスタオル",
+"RISEIドライTシャツ",
 
-price:2200,
+price:5500,
 
 image:image,
 
@@ -486,7 +672,8 @@ try {
 }
 
 let existingItem = cart.find(item =>
-    item.product === cartData.product
+    item.product === cartData.product &&
+    item.size === cartData.size
 );
 
 if(existingItem){

@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-RISEI SHOP｜履正社高校硬式野球部OB会公式グッズショップ
-</title>
+<title>履正社高校硬式野球部グッズ特設サイト</title>
 
 <style>
 
@@ -104,7 +102,7 @@ nav a{
         rgba(0,58,99,.55),
         rgba(0,183,199,.55)
     ),
-    url("01.jpeg");
+    url("01.jpg");
 
     background-size:cover;
     background-position:center;
@@ -119,9 +117,8 @@ nav a{
 }
 
 .hero h1{
-    font-size:3rem;
+    font-size:4rem;
     margin-bottom:20px;
-    line-height:1.3;
 }
 
 .hero p{
@@ -211,11 +208,8 @@ nav a{
 }
 
 .card img{
-    width:100%;
-    aspect-ratio:1/1;
-    object-fit:contain;
-    background:#fff;
-    padding:15px;
+    height:250px;
+    object-fit:cover;
 }
 
 .card-content{
@@ -313,14 +307,6 @@ nav{
 .section{
     padding:70px 0;
 }
-.catch-copy{
-    font-size:2.3rem;
-}
-
-.hero h1{
-    font-size:2rem;
-}
-
 }
 
 .logo span{
@@ -330,48 +316,7 @@ nav{
     color:#00b7c7;
 }
 
-.catch-copy{
-    font-size:4rem;
-    font-weight:900;
-    color:#ffd700;
-    letter-spacing:5px;
-    margin-bottom:30px;
 
-    text-shadow:
-    0 0 10px rgba(255,215,0,.7),
-    0 0 20px rgba(255,215,0,.5),
-    3px 3px 0 rgba(0,0,0,.4);
-
-    line-height:1;
-}
-
-.sub-copy{
-    font-size:1.3rem;
-    margin-bottom:40px;
-}
-
-.sale-period{
-    display:inline-block;
-    margin-bottom:35px;
-    padding:10px 25px;
-
-    background:#ff4444;
-    color:#fff;
-
-    font-weight:bold;
-    font-size:1.1rem;
-
-    border-radius:50px;
-
-    box-shadow:
-    0 5px 15px rgba(255,68,68,.4);
-}
-
-@media(max-width:768px){
-    .catch-copy{
-        font-size:2rem;
-    }
-}
 
 </style>
 </head>
@@ -382,8 +327,8 @@ nav{
 <div class="container header-inner">
 
 <div class="logo">
-RISEI SHOP
-<span>履正社高校硬式野球部OB会</span>
+履正社高校硬式野球部OB会
+<span>RISEI SHOP 特設サイト</span>
 </div>
 
 <nav>
@@ -400,22 +345,16 @@ RISEI SHOP
 
 <div class="container hero-content">
 
-<div class="catch-copy">
-圧倒的日本一！
-</div>
-
 <h1>
-履正社高校硬式野球部OB会<br>
-オフィシャルグッズショップ
+履正社高校硬式野球部<br>
+甲子園出場記念特設<br>
+オリジナルTシャツ販売<br>
 </h1>
-<p class="sub-copy">
 
-履正社野球部の歴史と誇りを胸に。<br>
-OB・OG・ファンがつながる
-公式グッズをお届けします。
-
+<p>
+選手たちへの応援を形に。<br>
+公式応援グッズ販売中。
 </p>
-
 
 <div class="hero-buttons">
     <a href="products.html" class="btn btn-main">
@@ -431,57 +370,13 @@ OB・OG・ファンがつながる
 
 </section>
 
-<section class="section">
-    <div class="container">
-
-        <div class="section-title">
-            <h2>RISEI SHOPについて</h2>
-        </div>
-
-        <div style="
-            max-width:900px;
-            margin:0 auto;
-            text-align:center;
-            background:#fff;
-            padding:40px;
-            border-radius:20px;
-            box-shadow:0 8px 25px rgba(0,0,0,.08);
-        ">
-
-            <p style="
-                font-size:1.1rem;
-                color:#444;
-                line-height:2;
-            ">
-                RISEI SHOPは、
-                <strong>履正社高校硬式野球部OB会公式グッズショップ</strong>
-                です。<br><br>
-
-                歴代OB・OG・保護者・ファンの皆様に向けて、<br>
-                履正社野球部の伝統と誇りを感じられる<br>
-                オリジナルアイテムをお届けしています。<br>
-
-                グッズを通じて卒業生と現役世代をつなぎ、<br>
-                履正社野球部のさらなる発展を応援していきます。
-            </p>
-
-        </div>
-
-    </div>
-</section>
-
 
 <section class="section products">
 
 <div class="container">
 
 <div class="section-title">
-<h2>商品ラインナップ</h2>
-
-<p style="color:#666;">
-表示価格はすべて税込価格です
-</p>
-
+<h2>人気グッズ</h2>
 </div>
 
 <div class="product-grid">
@@ -489,18 +384,16 @@ OB・OG・ファンがつながる
 <!-- 商品1 -->
 <div class="card">
 
-<img src="RISEI-sports-scarf.jpg"
-alt="RISEIオリジナルマフラータオル">
+<img src="tshirt.jpeg"
+alt="履正社応援Tシャツ">
 
 <div class="card-content">
 
-<h3>RISEIオリジナルマフラータオル</h3>
+<h3>履正社応援Tシャツ</h3>
 
-<div class="price">
-¥1,650（税込）
-</div>
+<div class="price">¥4,500</div>
 
-<a href="product-detail-1.html"
+<a href="product-detail.html"
 class="buy">
 
 詳細を見る
@@ -514,16 +407,14 @@ class="buy">
 <!-- 商品2 -->
 <div class="card">
 
-<img src="RISEI-uniform-towel.jpg"
-alt="RISEIユニフォーム　フェイスタオル">
+<img src="tshirt.jpeg"
+alt="履正社応援Tシャツ">
 
 <div class="card-content">
 
-<h3>RISEIユニフォーム　フェイスタオル</h3>
+<h3>優勝記念Tシャツ</h3>
 
-<div class="price">
-¥2,200（税込）
-</div>
+<div class="price">¥4,000</div>
 
 <a href="product-detail-2.html"
 class="buy">
@@ -539,121 +430,16 @@ class="buy">
 <!-- 商品3 -->
 <div class="card">
 
-<img src="RISEI-BASEBALL-cap.jpg"
-alt="RISEI BASEBALL キャップ">
+<img src="tshirt.jpeg"
+alt="履正社応援Tシャツ">
 
 <div class="card-content">
 
-<h3>RISEI BASEBALL キャップ</h3>
+<h3>優勝記念Tシャツ</h3>
 
-<div class="price">
-¥5,500（税込）
-</div>
+<div class="price">¥4,000</div>
 
 <a href="product-detail-3.html"
-class="buy">
-
-詳細を見る
-
-</a>
-
-</div>
-
-</div>
-
-<!-- 商品4 -->
-<div class="card">
-
-<img src="RISEI-dry-pants.jpg"
-alt="RISEI ドライハーフパンツ">
-
-<div class="card-content">
-
-<h3>RISEI ドライハーフパンツ</h3>
-
-<div class="price">
-¥5,500（税込）
-</div>
-
-<a href="product-detail-4.html"
-class="buy">
-
-詳細を見る
-
-</a>
-
-</div>
-
-</div>
-
-
-<!-- 商品5 -->
-<div class="card">
-
-<img src="RISEI-dry-tshirt.jpg"
-alt="RISEI ドライTシャツ">
-
-<div class="card-content">
-
-<h3>RISEI ドライTシャツ</h3>
-
-<div class="price">
-¥5,500（税込）
-</div>
-
-<a href="product-detail-5.html"
-class="buy">
-
-詳細を見る
-
-</a>
-
-</div>
-
-</div>
-
-
-<!-- 商品6 -->
-<div class="card">
-
-<img src="college-tshirt.jpg"
-alt="RISEI COLLEGEロゴ ビックシルエットTシャツ">
-
-<div class="card-content">
-
-<h3>RISEI COLLEGEロゴ ビックシルエットTシャツ</h3>
-
-<div class="price">
-¥5,500（税込）
-</div>
-
-<a href="product-detail-6.html"
-class="buy">
-
-詳細を見る
-
-</a>
-
-</div>
-
-</div>
-
-
-<!-- 商品7 -->
-<div class="card">
-
-<img src="college-hoodie.jpg"
-alt="RISEI COLLEGEロゴパーカー">
-
-<div class="card-content">
-
-<h3>RISEI COLLEGEロゴパーカー</h3>
-
-<div class="price">
-¥9,900（税込）
-</div>
-
-<a href="product-detail-7.html"
 class="buy">
 
 詳細を見る
@@ -681,7 +467,7 @@ class="buy">
 </h2>
 
 <p>
-伝統を纏い、履正社高校硬式野球部を応援しよう！
+応援グッズを購入して履正社高校硬式野球部を応援しよう！
 </p>
 
 <br>
@@ -692,79 +478,14 @@ class="buy">
 
 </div>
 
-
-
-</section>
-
-<section
-style="
-background:#f5f7fa;
-padding:40px 20px;
-text-align:center;
-border-top:1px solid #ddd;
-">
-
-<h3
-style="
-color:#003a63;
-margin-bottom:15px;
-">
-ショップ情報
-</h3>
-
-<p>
-
-<strong>RISEI SHOP</strong><br>
-
-履正社高等学校硬式野球部OB会<br>
-
-オフィシャルグッズショップ
-</p>
-
-<br>
-
-<p
-style="
-font-size:14px;
-color:#666;
-">
-
-※本企画・サイト運営は<br>
-Keep the Faith Apparel によるプロデュースです。
-
-</p>
-
-<br>
-
-<p
-style="
-font-size:14px;
-color:#333;
-margin-top:10px;
-">
-
-<strong>お問い合わせ先</strong><br>
-Keep The Faith<br>
-電話番号：070-8341-8056<br>
-メールアドレス：<a href="mailto:ktf358@gmail.com">ktf358@gmail.com</a>
-
-</p>
-
 </section>
 
 <footer>
 
 <p>
-© RISEI SHOP
+© 2026 履正社高校硬式野球部OB会
 <br>
-履正社高等学校硬式野球部OB会
-<br>
-オフィシャルグッズショップ</p>
-
-<br>
-
-<p style="font-size:12px;opacity:.8;">
-企画・運営：Keep the Faith Apparel
+甲子園出場記念Tシャツ販売特設サイト
 </p>
 
 </footer>

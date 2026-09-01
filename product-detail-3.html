@@ -232,27 +232,61 @@ RISEI SHOP
 <div class="detail-grid">
 
 <div class="detail-image">
-<img src="RISEI-uniform-towel.jpg" alt="RISEIユニフォーム フェイスタオル">
+
+<img
+id="productImage"
+src="RISEI-BASEBALL-cap.jpg"
+alt="RISEI BASEBALLキャップ"
+>
+
+<div style="
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:15px;
+">
+
+<button
+type="button"
+onclick="prevImage()"
+style="
+padding:10px 20px;
+border:none;
+background:#003a63;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+">
+◀
+</button>
+
+<button
+type="button"
+onclick="nextImage()"
+style="
+padding:10px 20px;
+border:none;
+background:#003a63;
+color:#fff;
+border-radius:8px;
+cursor:pointer;
+">
+▶
+</button>
+
+</div>
+
 </div>
 
 <div class="detail-info">
 
 <h1>
-RISEIユニフォーム フェイスタオル
-</h1>
+RISEI BASEBALLキャップ</h1>
 
 <div class="price">
-¥2,200（税込）
+¥5,500（税込）
 </div>
 <div class="description">
-
-<div style="
-background:#f0f7fa;
-border-left:5px solid #00b7c7;
-padding:20px;
-border-radius:10px;
-line-height:2;
-">
 
 <p style="
 font-weight:bold;
@@ -266,39 +300,87 @@ margin-bottom:15px;
 <p>
 
 <strong>
-あの伝統のユニフォームをそのままタオルに。
+【公式】ALUMNI ASSOCIATION 限定キャップ！！
 </strong>
 
 <br><br>
 
-履正社高校硬式野球部のホームユニフォームを
-モチーフにした、存在感抜群のフェイスタオルです。
+グレーのコットン生地に伝統の"R"の刺繍が映える、
+プレミアムなデザイン。
 
 <br><br>
 
-「RISEI」の力強いロゴと校章を忠実に再現し、
-まるでユニフォームを手にしているかのような仕上がり。
-
-応援はもちろん、
-観戦・記念品・コレクションとしてもおすすめです。
+OB会活動にはもちろん、
+普段使いのカジュアルシーンにも最適な一品です。
 
 <br><br>
 
-卒業生、在校生、保護者、
-野球ファン必見のアイテム。
+<strong>●プレミアム・ポイント</strong>
 
 <br><br>
 
-<strong>【商品詳細】</strong><br>
-・フェイスタオル<br>
-・ユニフォームデザイン仕様<br>
-・応援グッズ、記念品として最適<br>
-・普段使いにもおすすめ
+<strong>伝統の"R"刺繍</strong><br>
+
+フロントには象徴的な伝統の
+"R"ロゴが美しく刺繍されています。
 
 <br><br>
 
-受け継がれる伝統と誇りを、
-いつもそばに。
+<strong>こだわりのディテール</strong><br>
+
+細部まで丁寧に作り込まれた、
+ここでしか手に入らない
+特別な限定品です。
+
+<br><br>
+
+<strong>●商品の特徴</strong>
+
+<br><br>
+
+<strong>
+【特徴01】
+ジャストフィットを叶える
+『アメリカンバンド』
+</strong>
+
+<br>
+
+後部のアジャスターで
+55cm〜60cmまで自在にサイズ調整可能。
+
+男性・女性問わず
+快適に着用いただけます。
+
+<br><br>
+
+<strong>
+【特徴02】
+快適な被り心地を追求した
+『コットン100％』
+</strong>
+
+<br>
+
+肌触りが良く、
+通気性・吸湿性に優れた
+上質なコットン素材を使用。
+
+オールシーズンご愛用いただけます。
+
+<br><br>
+
+<strong>【商品仕様】</strong><br>
+
+サイズ：フリーサイズ
+（約55cm〜60cm調整可能）<br>
+
+アジャスター仕様：
+アメリカンバンド（スナップバック）<br>
+
+素材：コットン100%<br>
+
+カラー：グレー
 
 </p>
 
@@ -313,14 +395,25 @@ margin-bottom:15px;
 <h3>サイズ詳細</h3>
 
 <table>
+
 <tr>
 <th>項目</th>
-<th>サイズ</th>
+<th>仕様</th>
 </tr>
 
 <tr>
-<td>本体</td>
-<td>約34cm × 85cm</td>
+<td>サイズ</td>
+<td>フリーサイズ（55cm～60cm）</td>
+</tr>
+
+<tr>
+<td>素材</td>
+<td>コットン100%</td>
+</tr>
+
+<tr>
+<td>カラー</td>
+<td>グレー</td>
 </tr>
 
 </table>
@@ -355,6 +448,7 @@ line-height:1.8;
 7～14営業日程度で発送いたします。
 
 </div>
+
 
 
 <form id="cartForm">
@@ -426,6 +520,39 @@ placeholder="備考があれば入力"
 
 <script>
 
+const images = [
+    "RISEI-BASEBALL-cap.jpg",
+    "RISEI-BASEBALL-cap-detail.jpg"
+];
+
+let currentImage = 0;
+
+function nextImage(){
+
+    currentImage++;
+
+    if(currentImage >= images.length){
+        currentImage = 0;
+    }
+
+    document.getElementById(
+        "productImage"
+    ).src = images[currentImage];
+}
+
+function prevImage(){
+
+    currentImage--;
+
+    if(currentImage < 0){
+        currentImage = images.length - 1;
+    }
+
+    document.getElementById(
+        "productImage"
+    ).src = images[currentImage];
+}
+
 document
 .getElementById("cartForm")
 .addEventListener("submit", function(e){
@@ -434,7 +561,7 @@ document
 
     const size = "";
 
-const image = "RISEI-uniform-towel.jpg";
+const image = "RISEI-BASEBALL-cap.jpg";
 
     const quantity =
     document.querySelector(
@@ -449,13 +576,13 @@ const image = "RISEI-uniform-towel.jpg";
     const cartData = {
 
 id:
-"facetowel-" +
+"cap-" +
 Date.now(),
 
 product:
-"RISEIユニフォーム フェイスタオル",
+"RISEI BASEBALLキャップ",
 
-price:2200,
+price:5500,
 
 image:image,
 
